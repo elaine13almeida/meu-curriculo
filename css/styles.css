@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.main{
+	margin: 0px;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+nav{
+    height: 120px;
+    background-color: #fff;/*menu está colorido e com transparência*/
+    z-index: 0;/*sobreposição*/
+    width: 100%;/* largura de 100% da viewport*/
+    align-items: center;
+	margin-bottom: 20px;
+    }
+
+nav img{
+	display: inline-flex;
+    height: 40px;
+    width: 150px;
+    justify-content: center; /* logo no centro*/
+    z-index: 1;
+    margin: 15px auto;
+	padding: 5px;
+	}
+.img{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center; /* logo no centro*/
+	}
+
+nav ul{
+    display: flex;
+    font-size: 25px; /*tamanho da fonte*/
+    justify-content: space-around;/*opções do menu na lateral direita*/
+    position: relative;
+    bottom: 5px;
+	    }
+
+nav ul li{
+    list-style-type: none; /*retira os tópicos*/
+    margin-top: 15px;
+	border-top: solid black 1px;
+	padding: 5px;
+	cursor: pointer;
+	transform: scale(1, 1);
+	transition: transform 0.5s ease;
+	}
+
+	nav ul li:hover{
+	transform: scale(1.5, 1,5);
+	border-top: solid black 2px;
+	}
+
+	a:hover{
+		color: palevioletred;
+		font-weight: 500;
+		font-size: 30px;
+	}
+
+a{
+    color: black;  /*cor da fonte*/
+    text-decoration: none;/*sem marcação de link*/
+	text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 500;
+	font-size: 25px;
+	}
+
+ 
+.me {
+	display: inline-flex;
+	justify-content: center;
+    align-items: center;
+	width: 100%;
+	border: solid 1px #E5CCCC;
+	padding: 25px;
+	}
+
+.elaine{
+	display: flex;
+	flex-direction: column;
+	max-width: 600px; 
+	max-height: 350px;
+	padding: 10px;
+	margin: 20px;
+}
+
+
+
+.elaineimagem img{
+	max-width: 320px; 
+	max-height: 320px;
+	border-radius: 50%;
+	}
+.elaineimagem{
+	cursor: pointer;
+	transform: translateY(1);
+	transition: transform 0.5s ease;
+	}
+
+	.elaineimagem{
+	transform: translateY(1.5);
+	}
+
+h2, p{
+	margin: 8px;
+}
+
+.experiencia{
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: column;
+    align-items: flex-start;
+	width: 100%;
+	border: solid 1px #E5CCCC;
+	padding: 25px;
+}
+.itau, .ultra{
+	padding: 10px;
+	width: 100%;
+}
+h3{
+	padding-top: 10px;
+}
+footer{
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: column;
+    align-items: flex-start;
+	width: 100%;
+	padding: 10px;
+}
+.globalfooter{
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row;
+    align-items: flex-start;
+	width: 100%;
+	padding: 10px;
+}
+.endereço{
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	max-height: 450px;
+	padding: 10px;
+	margin: 20px;
+	}
+
+.container *{
+    box-sizing: border-box; /* facilita a resposividade nos navegadores, ajustandos os elementos dentro de boxes*/
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	max-width: 1300px;
+	max-height: 450px;
+	padding: 10px;
+	margin: 20px;
+	}
+
+.redes{
+	display: flex;
+	flex-direction: column;
+	align-items:  center;
+	 max-width: 400px;
+	max-height: 450px;
+	padding: 10px;
+	margin: 20px;
+}
+ 
+footer img{
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+	cursor: pointer;
+	transform: scale(1);
+	transition: transform 0.5s ease;
+}
+.rede{
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+	}
+
+.social1 img:hover{
+    height: 40px;
+	width: 40px;
+	transform: scale(1.5);
+	}
+	.social2 img:hover {
+    height: 40px;
+    width: 40px;
+	transform: scale(1.5);
+	}
+	.social3 img:hover{
+	height: 40px;
+    width: 40px;
+	transform: scale(1.5);
+	}
+
+	.social4 img:hover{
+    height: 40px;
+    width: 40px;
+	transform: scale(1.5);
+	}
+
+.contato{
+	width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.flex-outer{
+    max-width: 800px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.flex-outer li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.flex-outer li button{
+    margin-left: auto;
+    padding: 8px 15px;
+    border: none;
+    background: black;
+    font-weight: 400;
+    text-transform: uppercase;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+    }
+
+.flex-outer li textarea, input{
+    padding: 15px;
+    border:  solid #E5CCCC 1px;
+}
+[type="email"], [type="text"], .flex-outer li textarea, button{
+    width: 100%;
+    margin: 10px auto;
+}
